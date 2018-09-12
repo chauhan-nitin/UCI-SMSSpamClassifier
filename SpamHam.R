@@ -1,7 +1,9 @@
 #------------------------- LOADING THE DATASET ----------------------------#
 rm(list=ls(all=TRUE))
+#Current working directory
 getwd()
-setwd("C:/Users/obc1/Desktop/Projects")
+#Set working directory to where your data files are stored
+setwd("C:/Users/Desktop/SMSSpamCollection")
 require(data.table)
 spam_data <- fread("spam.csv", header = T, na.strings = "")
 
